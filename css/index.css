@@ -1,0 +1,90 @@
+/**{
+    border:1px solid black;
+}
+*/
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo{
+  width: 50px;
+  height: 50px;  
+}
+h1{
+    font-size: 15px;
+}
+article{
+    width: 30%;
+}
+article img{
+    width: 100%;
+   
+}
+#seccionFotos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.contenedorImg{
+    height: 290px;
+    overflow: hidden;
+}
+
+/* Estilos generales */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    padding: 10px;
+    background-color: #f8f8f8;
+}
+
+main {
+    padding: 20px;
+}
+
+.info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Media queries para pantallas pequeñas */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+
+    }
+
+    #logo { width: 100px; height: 100px; margin-bottom: 10px; /* Añade un margen inferior para separar el logo del h1 */ } h1 { font-size: 20px; text-align: center; /* Centra el texto del h1 */ }
+
+    article {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    #seccionFotos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contenedorImg {
+        height: auto;
+    }
+}
+
+/* Media queries para pantallas medianas */
+@media (min-width: 769px) and (max-width: 1024px) {
+    article {
+        width: 45%;
+    }
+
+    #seccionFotos {
+        justify-content: space-between;
+    }
+}
