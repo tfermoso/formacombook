@@ -6,7 +6,7 @@ corazon1.onclick=function(){
 }
     */
 var corazones=document.getElementsByClassName("fa-heart");
-
+//comentario
 for (let index = 0; index < corazones.length; index++) {
     var element = corazones[index];
     element.onclick=function(c){
